@@ -1,4 +1,4 @@
-# ti-js2xml [![Build Status](https://travis-ci.org/manumaticx/node-js2xmlparser.svg?branch=master)](https://travis-ci.org/manumaticx/node-js2xmlparser/)
+# ti-js2xml #
 
 ## Overview ##
 
@@ -21,7 +21,7 @@ ti-js2xml also supports a number of constructs unique to XML:
 
 ti-js2xml can also pretty-print the XML it outputs with the option of customizing the indent string.
 
-## Get it  [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/ti.js2xml) ##
+## Get it  [![gitTio](http://gitt.io/badge.png)](http://gitt.io/component/dk.napp.drawer) ##
 Download the latest distribution ZIP-file and consult the [Titanium Documentation](http://docs.appcelerator.com/titanium/latest/#!/guide/Using_a_Module) on how install it, or simply use the [gitTio CLI](http://gitt.io/cli):
 
 `$ gittio install ti.js2xml`
