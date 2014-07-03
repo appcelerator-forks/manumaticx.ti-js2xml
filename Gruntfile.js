@@ -10,17 +10,10 @@ module.exports = function(grunt) {
 		},
         copy: {
           main: {
-            files: [{
-                nonull: true,
-                src: ['lib/js2xmlparser.js'],
-                dest: 'android/assets/ti.js2xml.js',
-                flatten: true
-            },{
-                nonull: true,
-                src: ['lib/js2xmlparser.js'],
-                dest: 'ios/assets/ti.js2xml.js',
-                flatten: true
-            }]
+            nonull: true,
+            src: ['lib/js2xmlparser.js'],
+            dest: 'commonjs/src/ti.js2xml.js',
+            flatten: true
           },
         },
     });

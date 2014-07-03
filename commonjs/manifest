@@ -11,8 +11,8 @@ copyright: 2014 Manuel Lehner
 
 
 # these should not be edited
-name: ios
+name: ti.js2xml
 moduleid: ti.js2xml
 guid: ab294c8a-a171-48ae-ad0c-da641bba4761
-platform: iphone
+platform: commonjs
 minsdk: 3.3.0.Beta
