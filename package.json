@@ -16,6 +16,9 @@
   "version": "0.1.4",
   "author": "Michael Kourlas <michael@kourlas.net>",
   "main": "./lib/js2xmlparser.js",
+  "scripts": {
+    "test": "grunt test"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/michaelkourlas/node-js2xmlparser.git"
