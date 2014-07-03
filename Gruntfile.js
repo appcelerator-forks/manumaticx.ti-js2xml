@@ -29,6 +29,6 @@ module.exports = function(grunt) {
 
     grunt.registerTask('test', ['mochaTest']);
     grunt.registerTask('build', ['shell']);
-    grunt.registerTask('default', ['mochaTest', 'copy']);
+    grunt.registerTask('default', ['mochaTest', 'copy', 'build']);
 
 };
