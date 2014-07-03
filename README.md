@@ -1,4 +1,4 @@
-# ti-js2xml [![Build Status](https://travis-ci.org/manumaticx/node-js2xmlparser.svg?branch=master)](https://travis-ci.org/manumaticx/node-js2xmlparser/)
+# ti-js2xml [![Build Status](https://travis-ci.org/manumaticx/ti-js2xml.svg?branch=master)](https://travis-ci.org/manumaticx/ti-js2xml/)
 
 ## Overview ##
 
