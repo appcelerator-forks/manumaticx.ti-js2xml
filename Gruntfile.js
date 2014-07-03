@@ -16,12 +16,19 @@ module.exports = function(grunt) {
             flatten: true
           },
         },
+        shell: {
+            build: {
+                command: 'commonjs/build.py'
+            }
+        }
     });
 
     grunt.loadNpmTasks('grunt-mocha-test');
     grunt.loadNpmTasks('grunt-contrib-copy');
+    grunt.loadNpmTasks('grunt-shell');
 
     grunt.registerTask('test', ['mochaTest']);
+    grunt.registerTask('build', ['shell']);
     grunt.registerTask('default', ['mochaTest', 'copy']);
 
 };
