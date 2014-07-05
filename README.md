@@ -2,7 +2,7 @@
 
 ## Overview ##
 
-ti-js2xml is a fork of [node-js2xmlparser](https://github.com/michaelkourlas/node-js2xmlparser), a Node.js module for parsing JavaScript objects into XML. This fork adds Titanium modules for iOS and Android which can be used the same way as the original library.
+ti-js2xml is a fork of [node-js2xmlparser](https://github.com/michaelkourlas/node-js2xmlparser), a Node.js module for parsing JavaScript objects into XML. This fork adds a Titanium module which can be used the same way as the original library.
 
 ## Features ##
 
@@ -172,7 +172,7 @@ Here's an example that wraps strings in CDATA tags instead of escaping invalid c
 ti-js2xml comes with a set of tests that evaluate and verify the package's core functionality. To run the tests:
 
 * Install the test dependencies with `npm install`.
-* Run the tests with `mocha`.
+* Run the tests with `grunt test`.
 
 ## License ##
 
