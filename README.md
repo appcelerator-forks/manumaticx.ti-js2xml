@@ -39,7 +39,7 @@ The ti-js2xml module contains one function which takes the following arguments:
         * `encoding` - value of XML encoding attribute in declaration; a value of null represents no encoding attribute
           (string, optional, default: "UTF-8")
     * `attributeString` - the name of the property representing an element's attributes; note that any property with a
-      name equal to the attribute string is ignored except in the context of XML attributes (string, optional, default: 
+      name equal to the attribute string is ignored except in the context of XML attributes (string, optional, default:
       "@")
     * `valueString` - the name of the property representing an element's value; note that any property with a name equal
       to the value string is ignored except in the context of supplying a value for a tag containing attributes (string,
