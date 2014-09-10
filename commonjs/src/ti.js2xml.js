@@ -184,7 +184,7 @@
                         for (var attribute in object[property][attributeString]) {
                             if (object[property][attributeString].hasOwnProperty(attribute)) {
                                 xml += " " + attribute + "=\"" +
-                                    toString(object[property][attributeString][attribute]) + "\"";
+                                    toString(object[property][attributeString][attribute], true) + "\"";
                             }
                         }
                     }
@@ -200,7 +200,7 @@
                         xml += addBreak("/>");
                     }
                     else if (lengthExcludingAttributes === 1 && valueString in object[property]) { // Value string only
-                        xml += addBreak(">" + toString(object[property][valueString], true) + "</" + elementName + ">");
+                        xml += addBreak(">" + toString(object[property][valueString], false) + "</" + elementName + ">");
                     }
                     else { // Object with properties
                         xml += addBreak(">");
@@ -220,7 +220,7 @@
                 }
                 // Everything else
                 else {
-                    xml += addBreak(addIndent("<" + elementName + ">" + toString(object[property]) + "</" +
+                    xml += addBreak(addIndent("<" + elementName + ">" + toString(object[property], false) + "</" +
                         elementName + ">", level));
                 }
             }
@@ -265,7 +265,7 @@
     };
 
     // Convert anything into a valid XML string representation
-    var toString = function(data) {
+    var toString = function(data, isAttribute) {
         // Recursive function used to handle nested functions
         var functionHelper = function(data) {
             if (Object.prototype.toString.call(data) === "[object Function]") {
@@ -297,7 +297,8 @@
             data = (data === null || typeof data === "undefined") ? "" : data.toString();
         }
 
-        if (useCDATA) {
+        // Output as CDATA instead of escaping if option set (and only if not an attribute value)
+        if (useCDATA && !isAttribute) {
             data = "<![CDATA[" + data.replace(/]]>/gm, "]]]]><![CDATA[>") + "]]>";
         }
         else {
